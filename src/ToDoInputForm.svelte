@@ -8,7 +8,7 @@
     onMount(() => {newItemInputForm.focus()})
 
     function addToList() {
-        $toDoItems = [$toDoItems, {text: newitem, status: false}]
+        $toDoItems = [...$toDoItems, {text: newitem, status: false}]
         newitem = ""
     }
 </script>
